@@ -1,0 +1,33 @@
+---
+title: "2024_r4ds-ggplot2"
+knit: "bookdown::render_book"
+output:
+  bookdown::gitbook:
+    css: [css/git.css, css/toc.css]      # Custom CSS files
+    config:
+      toc:                               # Table of Contents
+        collapse: section                # Collapsible Table of Contents
+      download: ["pdf", "epub"]          # Enable download links for PDF and EPUB
+link-citations: yes                      # Enable citation links
+github-repo: "gurinina/2024_r4ds-ggplot2" # GitHub repo for linking
+url: 'https://bookdown.org/ggiaever/2024_r4ds-ggplot2/' # Published book URL
+site: bookdown::bookdown_site            # Bookdown-specific site configuration
+documentclass: book                      # Use book formatting for PDF output
+cover-image: "images/koosggplot.png"     # Custom cover image
+---
+
+```{r, include=FALSE}
+source("scripts/_common.R")
+```
+
+# R for data science workshop:  {-}
+
+<p align="center">
+  <img src="images/koosggplot.png" alt="Welcome to Omics Science!" width="300" />
+</p>
+
+The published version for this module can be found on my bookdown site [2024_r4ds-ggplot2](https://bookdown.org/ggiaever/2024_r4ds-ggplot2/).
+
+This module is based on the Data visualization chapter in Hadley Wickham's book [2nd edition of "R for Data Science"](https://r4ds.hadley.nz/)(see README.md).
+
+

@@ -1,0 +1,22 @@
+bookdown::gitbook:
+  fig_caption: false  # Disable figure captions in Gitbook
+  css: [css/git.css, css/toc.css]
+  config:
+    toc:
+      collapse: section
+    download: ["pdf", "epub"]
+
+bookdown::pdf_book:
+  fig_caption: false  # Disable figure captions in PDF output
+  pandoc_args: --listings
+  includes:
+    in_header: lessons/preamble.tex
+  latex_engine: xelatex
+  toc: true
+  number_sections: true
+  lof: false    # Disable List of Figures
+  lot: false    # Disable List of Tables
+
+bookdown::epub_book:
+  fig_caption: false  # Disable figure captions in EPUB output
+  epub_version: "epub3"
