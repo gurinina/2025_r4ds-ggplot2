@@ -234,10 +234,11 @@ As a rule of thumb, geoms are generally useful for highlighting a subset of the 
 To demonstrate using `annotate()`, let's create some text to add to our plot.
 The text is a bit long, so we'll use `stringr::str_wrap()` to automatically add line breaks to it given the number of characters you want per line:
 
-```{r, out.width="80%"}
-trend_text <- "Larger engine sizes tend to have lower fuel economy." |> str_wrap(width = 30)
 
-trend_text
+```{r, out.width="80%"}
+trend_text <- "Larger engine sizes tend to have lower fuel economy." |> 
+  str_wrap(width = 30)
+
 ```
 
 Then, we add two layers of annotation: one with a label `geom` and the other with a segment geom.

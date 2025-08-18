@@ -10,7 +10,7 @@ bookdown::pdf_book:
   fig_caption: false  # Disable figure captions in PDF output
   pandoc_args: --listings
   includes:
-    in_header: lessons/preamble.tex
+    in_header: scripts/preamble.tex
   latex_engine: xelatex
   toc: true
   number_sections: true
